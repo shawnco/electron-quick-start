@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <style>
+    body{
+        background-color:green;
+    }
+    canvas{
+        background-color: white;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <canvas id='canvas' height='2000' width='2000'></canvas>
 
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./renderer.js');
+      var voronoi = require('voronoi');
     </script>
+    <script src='canvas.js'></script>
+    <script src='app.js'></script>
   </body>
 </html>
