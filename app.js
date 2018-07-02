@@ -8,6 +8,6 @@
 //     delta = Math.sqrt((offTop*offTop) + (offLeft*offLeft));
 //     generateCity(delta);
 // }
-generateCity(0);
-// generateCity(1000);
+// generateCity(0);
+generateCity(1000);
 drawSupergrid();

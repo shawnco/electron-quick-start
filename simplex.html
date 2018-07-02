@@ -13,15 +13,15 @@
     </style>
   </head>
   <body>
-    <a href='simplex.html'>Try simplex</a><br>
+    <a href='index.html'>Go home</a><br>
     <canvas id='canvas' height='2000' width='2000'></canvas>
 
     <script>
       // You can also require other files to run in this process
       require('./renderer.js');
-      var voronoi = require('voronoi');
+      const SimplexNoise = require('simplex-noise');
     </script>
     <script src='canvas.js'></script>
-    <script src='app.js'></script>
+    <script src='simplex.js'></script>
   </body>
 </html>
